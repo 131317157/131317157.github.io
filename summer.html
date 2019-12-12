@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>僕夏</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    
+    <style>
+        body{
+            width: 1000px;
+            height: 800px;
+            background-image: url("img/take.JPG");
+            background-repeat: no-repeat;
+            background-size: 1000px 1100px;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+        
+        #main{
+            margin: 10px;
+            background-color: rgba(255,255,255,0.5);
+            padding: 3px;
+            height: 1080px;
+            width: 980px;
+        }
+        
+        #dai{
+            background-color: rgba(200,200,255,0.9);
+            margin:3px 300px 25px 300px;
+           
+        }
+        
+        #main1{
+            background-color: rgba(255,255,200,0.7);
+            margin:0px 150px 0px 150px;
+            padding: 3px;
+        }
+        #main2{
+            background-color: rgba(250,150,155,0.7);
+            margin:0px 150px 0px 150px;
+            padding: 3px;
+        }
+        #main3{
+            background-color: rgba(110,200,255,0.7);
+            margin:0px 150px 0px 150px;
+            padding: 3px;
+        }
+        
+        #photo{
+            background-color: rgba(255,255,255,0.7);
+            margin: 0px 300px 0px 300px;
+        }
+    </style>
+    
+</head>
+   <script>
+    $(function(){
+        $("#pika").click(function(){
+        $(this).attr('scr','img/pika.JPG');
+    },
+    function(){
+            $(this).attr('src','img/inu.jpeg');
+        });
+        $("#pika").width(170).height(170);
+        });
+       
+       $(function(){
+        $("#aka").click(function(){
+        $(this).attr('scr','img/aka.JPG');
+    },
+    function(){
+            $(this).attr('src','img/kin.jpeg');
+        });
+        $("#aka").width(170).height(170);
+        });
+       
+       $(function(){
+        $("#dri").click(function(){
+        $(this).attr('scr','img/dri.JPG');
+    },
+    function(){
+            $(this).attr('src','img/tapi.jpeg');
+        });
+        $("#dri").width(170).height(170);
+        });
+    </script>
+    
+<body>
+   <div id="main">
+       
+    <div id="dai">
+            <h1>京都に行った</h1>
+            <h4>画像clickしてね</h4>
+    </div>
+       
+    <div id="main1">
+    <h4>一日目<br>ポケモンセンターに行ったら京都らしく舞妓さん風のピカチュウの像があった</h4>
+    </div>
+    
+    <div id="photo">
+       <p><img src="img/pika.JPG" id="pika" alt="" height="170" width="170"></p>
+    </div>
+       
+    <div id="main2">
+    <h4>二日目<br>伏見稲荷に行った。疲れていたので全然上のほうの鳥居はあきらめた,あと金閣</h4>
+    </div>
+    
+    <div id="photo">
+       <p><img src="img/aka.JPG" id="aka" alt="" height="170" width="170"></p>
+    </div>
+    
+    <div id="main3">
+        <h4>三日目<br>京都のインスタ映えスポットに行った。カラフルなゼリーが入ったドリンクが有名なお店だったがゼリーは売り切れていてので、フロートにした、あと千円くらいしたタピオカ</h4>
+    </div>
+    
+    <div id="photo">
+       <p><img src="img/dri.JPG" id="dri" alt="" height="170" width="170"></p>
+    </div>
+
+    </div>
+
+</body>
+</html>
